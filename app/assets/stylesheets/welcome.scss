@@ -11,17 +11,49 @@ p#index-title {
   color: blue;
 }
 
-.posts{
+.posts {
   border: solid;
   margin: 5px;
   padding: 5px;
   height: 200px;
 }
 
-section{
+section {
   background: #5998ff;
   border-style: solid;
   border-width: 5px;
   margin: 5px 5px 5px 5px;
   padding: 5px 5px 5px 5px;
+}
+
+// Creating footer with button links
+.social-btn {
+  background: #0099FF;
+  border: solid;
+  border-width: 1px;
+  height: 30px;
+  width: 50px;
+  color: #FFFFF0;
+  text-align: center;
+  padding: 5px;
+}
+
+#footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #0099FF;
+  padding: 10px;
+  text-align: center;
+  height: 45px;
+}
+
+#footer li{
+  display: inline;
+}
+
+#footer ul{
+  top: 3px;
+  position: relative;
 }
