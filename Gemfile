@@ -3,7 +3,16 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.1'
+
+# Lesson 23 - CSS: adding boostrap framework for navigation bar
 gem 'bootstrap-sass'
+
+# Lesson 25 - Rails Console: Trying out 'pry'
+gem 'pry-rails'
+
+# Lesson 26 - Seed Data: Faker gem for generating large amounts of data to test
+gem 'faker'
+
 # Use sqlite3 as the database for Active Record
 #gem 'sqlite3'
 
