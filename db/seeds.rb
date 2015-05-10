@@ -1,7 +1,7 @@
 require 'faker'
 
 # Create Posts
-3.times do 
+50.times do 
   Post.create!(
     title: Faker::Lorem.sentence,
     body: Faker::Lorem.paragraph
@@ -10,7 +10,7 @@ end
 posts = Post.all
 
 # Create Comments
-3.times do
+100.times do
   Comment.create!(
     post: posts.sample,
     body: Faker::Lorem.paragraph
@@ -38,7 +38,7 @@ puts "#{Comment.count} comments created"
 
 Post.all.each do |p|
   puts "Title: #{p.title}"
-  Comment.all.each do |c|
+  p.comments.all.each do |c|
     puts "   Comments: #{c.body}"
   end
 end
