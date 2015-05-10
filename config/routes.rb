@@ -1,7 +1,19 @@
 Rails.application.routes.draw do
-  get 'welcome/index'
+  # get 'posts/index'
 
-  get 'welcome/about'
+  # get 'posts/show'
+
+  # get 'posts/new'
+
+  # get 'posts/edit'
+
+  # get 'welcome/index'
+
+  # get 'welcome/about'
+  
+  # Removing automatic get statements above and replacing in favor of below
+  resources :posts
+  get 'about' => 'welcome#about'
 
   root to: 'welcome#index'
 
