@@ -14,6 +14,15 @@
       <li><%= link_to "About", about_path%></li>
       <li><%= link_to "Contact", contact_path%></li>
       <li><%= link_to "Posts", posts_path%></li>
+
+      <div class="pull-right user-info">
+        <% if current_user %>
+          Hello <%= current_user.email %>!  <%= link_to "Sign out", destroy_user_session_path, method: :delete %>
+        <% else %>
+          <%= link_to "Sign In", new_user_session_path %> or 
+          <%= link_to "Sign Up", new_user_registration_path %>
+        <% end %>
+
     </ul>
 
     <% if flash[:notice] %>
