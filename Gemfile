@@ -23,6 +23,9 @@ gem 'faker'
 # Lesson 30 - User Authentication: Using devise gem
 gem 'devise' 
 
+# Lesson 31 - User Authentication 2
+gem 'figaro', '1.0'
+
 # Use sqlite3 as the database for Active Record
 #gem 'sqlite3'
 
