@@ -36,4 +36,10 @@ class PostsController < ApplicationController
       render :edit
     end
   end
+
+  before_action :flash_attack
+  protected
+  def flash_attack
+    flash[:update] = "Testing"
+  end
 end
