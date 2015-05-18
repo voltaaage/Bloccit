@@ -8,7 +8,7 @@ class PostsController < ApplicationController
   end
 
   def new
-    @post = Post.new
+    @post = Post.new()
   end
 
   def create
@@ -36,4 +36,6 @@ class PostsController < ApplicationController
       render :edit
     end
   end
+
+  #before_action :authenticate_user!
 end
