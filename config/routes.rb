@@ -1,4 +1,12 @@
 Rails.application.routes.draw do
+  get 'topics/index'
+
+  get 'topics/new'
+
+  get 'topics/show'
+
+  get 'topics/edit'
+
   devise_for :users
   # get 'posts/index'
 
@@ -16,6 +24,7 @@ Rails.application.routes.draw do
   
   # Removing automatic get statements above and replacing in favor of below
   resources :posts
+  resources :topics
   get 'about' => 'welcome#about'
   get 'contact' => 'welcome#contact'
 
