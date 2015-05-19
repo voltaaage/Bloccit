@@ -28,7 +28,7 @@ gem 'figaro', '1.0'
 
 # Use sqlite3 as the database for Active Record
 #gem 'sqlite3'
-
+gem 'pundit'
 
 
 # Use SCSS for stylesheets

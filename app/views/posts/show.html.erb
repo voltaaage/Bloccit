@@ -1,5 +1,5 @@
 <h1><%= @post.title %></h1>
-
+<% if policy(@post).edit? %>
   <%= link_to "Edit", edit_post_path(@post),class: 'btn btn-success' %>
-
+<% end %>
 <p><%= @post.body %></p>
