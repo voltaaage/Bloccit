@@ -23,8 +23,9 @@ Rails.application.routes.draw do
   # get 'welcome/contact'
   
   # Removing automatic get statements above and replacing in favor of below
-  resources :posts
-  resources :topics
+  resources :topics do
+    resources :posts, except: [:index]
+  end
   get 'about' => 'welcome#about'
   get 'contact' => 'welcome#contact'
 

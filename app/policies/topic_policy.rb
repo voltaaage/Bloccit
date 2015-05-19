@@ -1,4 +1,4 @@
-class TopicPolicy < ApplcationPolicy
+class TopicPolicy < ApplicationPolicy
 
   def index?
     true
