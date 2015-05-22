@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'users/update'
+
   get 'topics/index'
 
   get 'topics/new'
@@ -8,19 +10,8 @@ Rails.application.routes.draw do
   get 'topics/edit'
 
   devise_for :users
-  # get 'posts/index'
 
-  # get 'posts/show'
-
-  # get 'posts/new'
-
-  # get 'posts/edit'
-
-  # get 'welcome/index'
-
-  # get 'welcome/about'
-  
-  # get 'welcome/contact'
+  resources :users, only: [:update]
   
   # Removing automatic get statements above and replacing in favor of below
   resources :topics do
