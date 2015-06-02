@@ -49,6 +49,8 @@ class PostsController < ApplicationController
     flash[:update] = "Testing"
   end
 
+  private
+
   def post_params
     params.require(:post).permit(:title, :body)
   end
