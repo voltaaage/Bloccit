@@ -39,7 +39,7 @@ section {
 }
 
 #footer {
-  position: fixed;
+  position: static;
   bottom: 0;
   left: 0;
   right: 0;
@@ -47,6 +47,8 @@ section {
   padding: 10px;
   text-align: center;
   height: 45px;
+  clear: both;
+  margin-top: 15px;
 }
 
 #footer li{
