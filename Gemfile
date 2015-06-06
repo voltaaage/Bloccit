@@ -30,6 +30,13 @@ gem 'figaro', '1.0'
 #gem 'sqlite3'
 gem 'pundit'
 
+# Lesson 43 - Post Markdown
+gem 'redcarpet'
+
+# Lesson 44 - Uploading Images
+gem 'carrierwave'
+gem 'mini_magick'
+gem 'fog'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
