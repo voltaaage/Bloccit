@@ -9,6 +9,8 @@ class Post < ActiveRecord::Base
   validates :body, length: { minimum: 20}, presence: true
   validates :user, presence: true
 
+  mount_uploader :image, ImageUploader
+
   def markdown_title
     render_as_markdown(title)
   end
