@@ -4,8 +4,6 @@ class Post < ActiveRecord::Base
   belongs_to :topic
 
   default_scope { order('created_at DESC') }
-  # default_scope { order('title') }
-  # default_scope { order('created_at ASC') }
 
   validates :title, length: { minimum: 5 }, presence: true
   validates :body, length: { minimum: 20}, presence: true
