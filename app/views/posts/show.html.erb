@@ -16,3 +16,7 @@
     <% end %>
   </div>
 </div>
+<hr>
+<% @comments.each do |comment| %>
+  <%= render comment %>
+<% end %>
