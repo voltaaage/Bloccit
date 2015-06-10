@@ -9,7 +9,6 @@
     <p><%= @post.markdown_body %></p>
     <%= image_tag(@post.image.url) if @post.image? %>
   </div>
-  </br></br>
   <div class="col-md-4">
     <% if policy(@post).edit? %>
       <%= link_to "Edit", edit_topic_post_path(@topic, @post), class: 'btn btn-success' %>
@@ -17,6 +16,7 @@
   </div>
 </div>
 
+<h3>Comments</h4>
 <% @post.comments.each do |comment| %>
   <%= render comment %>
 <% end %>
