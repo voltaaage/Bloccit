@@ -20,3 +20,6 @@
 <% @comments.each do |comment| %>
   <%= render comment %>
 <% end %>
+<% if policy(Comment.new).create? %>
+  <%= link_to "Comment", new_topic_post_comment_path(@topic,@post,Comment.new) %>
+<% end %>

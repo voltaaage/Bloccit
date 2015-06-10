@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get 'comments/create'
+  #get 'comments/create'
 
   get 'users/update'
 
@@ -18,13 +18,13 @@ Rails.application.routes.draw do
   # Removing automatic get statements above and replacing in favor of below
   resources :topics do
     resources :posts, except: [:index] do
-      resources :comments, only: [:create]
+      resources :comments, only: [:create,:new]
     end
   end
 
   get 'about' => 'welcome#about'
   get 'contact' => 'welcome#contact'
-  get 'createComments' => 'comments#create'
+  #get 'comments' => '/topics/:topic_id/posts/:post_id/comments'
 
   root to: 'welcome#index'
 
