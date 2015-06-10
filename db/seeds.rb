@@ -52,7 +52,7 @@ users = User.all
  topics = Topic.all
 
 # Create Posts
-700.times do 
+20.times do 
   Post.create!(
     user: users.sample,
     topic: topics.sample,
@@ -63,7 +63,7 @@ end
 posts = Post.all
 
 # Create Comments
-700.times do
+20.times do
   Comment.create!(
     post: posts.sample,
     body: Faker::Lorem.paragraph,
