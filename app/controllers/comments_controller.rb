@@ -1,8 +1,8 @@
 class CommentsController < ApplicationController
+  respond_to :html
   def create
-    @topic = Topic.find(params[:topic_id])
     @post = Post.find(params[:post_id])
-    @comment = current_user.comments.build(comments_params)
+    @comment = current_user.comments.build(comment_params)
     @comment.post_id = @post.id
 
     authorize @comment
@@ -11,10 +11,13 @@ class CommentsController < ApplicationController
     else
       flash[:error] = "There was an error saving the comment. Please try again."
     end
-    redirect_to [@topic,@post]
+    
+    respond_with(@comment) do |format|
+      format.html { redirect_to [@post.topic, @post] }
+    end
   end
 
-  def comments_params
-    params.require(:comment).permit(:body,:post_id)
+  def comment_params
+    params.require(:comment).permit(:body)
   end
 end
