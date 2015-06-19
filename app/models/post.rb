@@ -4,6 +4,8 @@ class Post < ActiveRecord::Base
   belongs_to :user
   belongs_to :topic
 
+  after_create :create_vote
+
   default_scope { order('rank DESC') }
 
   validates :title, length: { minimum: 5 }, presence: true
@@ -40,6 +42,10 @@ class Post < ActiveRecord::Base
   end
 
   private
+
+  def create_vote
+    user.votes.create(post: self, value: 1)
+  end
 
   def render_as_markdown(markdown)
     renderer = Redcarpet::Render::HTML.new
