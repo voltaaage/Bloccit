@@ -69,6 +69,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # gem 'capistrano-rails', group: :development
 
 group :development, :test do
+  #lesson 53 - Interlude
+  gem 'capybara'
 
   gem 'rspec-rails','~> 3.0'
 
