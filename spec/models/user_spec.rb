@@ -10,4 +10,5 @@ describe User do
 
     xit "returns the appropriate favorite is it exists" do
     end  
+  end
 end
