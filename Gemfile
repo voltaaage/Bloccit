@@ -41,6 +41,9 @@ gem 'fog'
 # Lesson 45 - Pagination
 gem 'will_paginate'
 
+# Lesson 55 - Popular Post
+gem 'newrelic_rpm'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
