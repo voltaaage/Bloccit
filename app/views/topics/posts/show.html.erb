@@ -29,7 +29,7 @@
 
 <h3>Comments</h4>
 <% @post.comments.each do |comment| %>
-  <%= render comment %>
+  <%= render partial: 'comments/comment', collection: @comments %>
 <% end %>
 
 <% if policy(Comment.new).create? %>
