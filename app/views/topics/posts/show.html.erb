@@ -28,9 +28,7 @@
 </div>
 
 <h3>Comments</h4>
-<% @post.comments.each do |comment| %>
-  <%= render partial: 'comments/comment', collection: @comments %>
-<% end %>
+<%= render partial: 'comments/comment', collection: @comments %>
 
 <% if policy(Comment.new).create? %>
   <%= render partial: 'comments/form', locals: {topic: @topic, post: @post} %>
