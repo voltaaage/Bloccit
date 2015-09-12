@@ -7,4 +7,6 @@ class Topic < ActiveRecord::Base
   self.per_page = 50
 
   scope :visible_to, -> (user) { user ? all : where(public: true)}
+  scope :publicly_viewable, -> { where(public: true) }
+  scope :privately_viewable, -> { where(public: false) }
 end
