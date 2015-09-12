@@ -1,32 +1,18 @@
-== README
+#Bloccit
+Bloccit is an app where people can post, vote on, share and save links and comments. 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
-
-## Bloccit: a Reddit replica to teach the fundamentals of web development and Rails.
-
-Made with my mentor at [Bloc](http://bloc.io).
+##Features Implemented
+* Seeded data
+* User Signup/sign-in
+* Topic/Post/Comment association and relationships
+* Validation of form inputs
+* Post Markdown
+* Uploading images
+* Pagination
+* Creating and destroying comments with AJAX
+* RSpec
+* Voting on Topics and Posts
+* Mocking
+* Favoriting posts
+* User profiles
+* Private topics
