@@ -2,7 +2,6 @@ source 'https://rubygems.org'
 
 gem 'rails', '4.2.1'
 
-
 # Lesson 23 - CSS: adding boostrap framework for navigation bar
 gem 'bootstrap-sass'
 
@@ -18,8 +17,7 @@ gem 'devise'
 # Lesson 31 - User Authentication 2
 gem 'figaro', '1.0'
 
-# Use sqlite3 as the database for Active Record
-#gem 'sqlite3'
+# Lesson 39 - Authorization
 gem 'pundit'
 
 # Lesson 43 - Post Markdown
