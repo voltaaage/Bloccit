@@ -32,7 +32,7 @@ gem 'fog'
 gem 'will_paginate'
 
 # Lesson 55 - Popular Post
-gem 'newrelic_rpm'
+#gem 'newrelic_rpm'
 
 # Lesson 56 - Testing Users
 gem 'factory_girl_rails', '~> 4.0'
