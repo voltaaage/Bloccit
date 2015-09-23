@@ -1,6 +1,8 @@
 #Bloccit
 Bloccit is an app where people can post, vote on, share and save links and comments. 
 
+Visit the deployed application [here](https://fongfan-bloccit.herokuapp.com)
+
 ##Features Implemented
 * Seeded data
 * User Signup/sign-in
