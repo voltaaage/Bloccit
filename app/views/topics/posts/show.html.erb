@@ -32,6 +32,8 @@
   <%= render partial: 'comments/comment', collection: @comments %>
 </div>
 
-<div class='new-comment'>
-  <%= render 'comments/form' %>
-</div>
+<% if policy(@post).edit? %>
+  <div class='new-comment'>
+    <%= render 'comments/form' %>
+  </div>
+<% end %>
